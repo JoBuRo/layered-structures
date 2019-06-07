@@ -1,0 +1,564 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="urn:absolute:LayeredStructures"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="urn:absolute:LayeredStructures">
+    <Prefix name="" IRI="urn:absolute:LayeredStructures"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/biotop/btl2.owl</Import>
+    <Declaration>
+        <NamedIndividual IRI="#T2_Code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvasiveTumorOfFourthLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/biotop/btl2.owl#StructuredBiologicalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondLayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnatomicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/biotop/btl2.owl#Compound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InnerLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T4_Code"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#surrounds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvasiveTumorOfSecondLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvasiveTumorOfThirdLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/biotop/btl2.owl#InformationObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LayeredStructureComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#T2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvasiveTumorOfFirstLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#T4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T2_Tumor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T1_Tumor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T3_Tumor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThirdLayer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T4_Tumor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryTumor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T1_Code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OuterLayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T3_Code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#T1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#T3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FourthLayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#FirstLayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#LayeredStructureComponent"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isSurroundedBy"/>
+                    <Class IRI="#FirstLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isSurroundedBy"/>
+                <Class IRI="#SecondLayer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FourthLayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#LayeredStructureComponent"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isSurroundedBy"/>
+                    <Class IRI="#FourthLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InvasiveTumorOfFirstLayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PrimaryTumor"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                    <Class IRI="#SecondLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isSurroundedBy"/>
+                    <Class IRI="#SecondLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InvasiveTumorOfFourthLayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PrimaryTumor"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                <Class IRI="#FourthLayer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InvasiveTumorOfSecondLayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PrimaryTumor"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                    <Class IRI="#ThirdLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isSurroundedBy"/>
+                    <Class IRI="#ThirdLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InvasiveTumorOfThirdLayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PrimaryTumor"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                    <Class IRI="#FourthLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isSurroundedBy"/>
+                    <Class IRI="#FourthLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SecondLayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#LayeredStructureComponent"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isSurroundedBy"/>
+                    <Class IRI="#SecondLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isSurroundedBy"/>
+                <Class IRI="#ThirdLayer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#T1"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#RepresentationalUnitInTNMClassification"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+                <Class IRI="#InvasiveTumorOfFirstLayer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+                <Class IRI="#InvasiveTumorOfFirstLayer"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#T2"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#RepresentationalUnitInTNMClassification"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+                <Class IRI="#InvasiveTumorOfSecondLayer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+                <Class IRI="#InvasiveTumorOfSecondLayer"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#T3"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#RepresentationalUnitInTNMClassification"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+                <Class IRI="#InvasiveTumorOfThirdLayer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+                <Class IRI="#InvasiveTumorOfThirdLayer"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#T4"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#RepresentationalUnitInTNMClassification"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+                <Class IRI="#InvasiveTumorOfFourthLayer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+                <Class IRI="#InvasiveTumorOfFourthLayer"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ThirdLayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#LayeredStructureComponent"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isSurroundedBy"/>
+                    <Class IRI="#ThirdLayer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isSurroundedBy"/>
+                <Class IRI="#FourthLayer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AnatomicalStructure"/>
+        <Class IRI="http://purl.org/biotop/btl2.owl#StructuredBiologicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstLayer"/>
+        <Class IRI="#InnerLayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstLayer"/>
+        <Class IRI="#LayeredStructureComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FourthLayer"/>
+        <Class IRI="#OuterLayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InnerLayer"/>
+        <Class IRI="#LayeredStructureComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvasiveTumorOfFirstLayer"/>
+        <Class IRI="#PrimaryTumor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvasiveTumorOfFirstLayer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+            <ObjectUnionOf>
+                <Class IRI="#T1"/>
+                <ObjectComplementOf>
+                    <Class IRI="#RepresentationalUnitInTNMClassification"/>
+                </ObjectComplementOf>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvasiveTumorOfFourthLayer"/>
+        <Class IRI="#PrimaryTumor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvasiveTumorOfFourthLayer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+            <ObjectUnionOf>
+                <Class IRI="#T4"/>
+                <ObjectComplementOf>
+                    <Class IRI="#RepresentationalUnitInTNMClassification"/>
+                </ObjectComplementOf>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvasiveTumorOfSecondLayer"/>
+        <Class IRI="#PrimaryTumor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvasiveTumorOfSecondLayer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+            <ObjectUnionOf>
+                <Class IRI="#T2"/>
+                <ObjectComplementOf>
+                    <Class IRI="#RepresentationalUnitInTNMClassification"/>
+                </ObjectComplementOf>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvasiveTumorOfThirdLayer"/>
+        <Class IRI="#PrimaryTumor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvasiveTumorOfThirdLayer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+            <ObjectUnionOf>
+                <Class IRI="#T3"/>
+                <ObjectComplementOf>
+                    <Class IRI="#RepresentationalUnitInTNMClassification"/>
+                </ObjectComplementOf>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LayeredStructureComponent"/>
+        <Class IRI="#AnatomicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OuterLayer"/>
+        <Class IRI="#LayeredStructureComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryTumor"/>
+        <Class IRI="#AnatomicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+        <Class IRI="http://purl.org/biotop/btl2.owl#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondLayer"/>
+        <Class IRI="#LayeredStructureComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#T1"/>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#T2"/>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#T3"/>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#T4"/>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThirdLayer"/>
+        <Class IRI="#LayeredStructureComponent"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+        <NamedIndividual IRI="#T1_Code"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrimaryTumor"/>
+        <NamedIndividual IRI="#T1_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                <Class IRI="#SecondLayer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+        <NamedIndividual IRI="#T1_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+            <Class IRI="#FirstLayer"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#T1_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+        <NamedIndividual IRI="#T2_Code"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrimaryTumor"/>
+        <NamedIndividual IRI="#T2_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                <Class IRI="#ThirdLayer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+        <NamedIndividual IRI="#T2_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+            <Class IRI="#SecondLayer"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#T2_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+        <NamedIndividual IRI="#T3_Code"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrimaryTumor"/>
+        <NamedIndividual IRI="#T3_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                <Class IRI="#FourthLayer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+        <NamedIndividual IRI="#T3_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+            <Class IRI="#SecondLayer"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#T3_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+            <Class IRI="#ThirdLayer"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#T3_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+        <NamedIndividual IRI="#T4_Code"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrimaryTumor"/>
+        <NamedIndividual IRI="#T4_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+            <Class IRI="#FourthLayer"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#T4_Tumor"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+        <NamedIndividual IRI="#T1_Tumor"/>
+        <NamedIndividual IRI="#T1_Code"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+        <NamedIndividual IRI="#T2_Tumor"/>
+        <NamedIndividual IRI="#T2_Code"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+        <NamedIndividual IRI="#T3_Tumor"/>
+        <NamedIndividual IRI="#T3_Code"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+        <NamedIndividual IRI="#T4_Tumor"/>
+        <NamedIndividual IRI="#T4_Code"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <ObjectProperty IRI="#surrounds"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#surrounds"/>
+    </TransitiveObjectProperty>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
+            <ObjectProperty IRI="#isSurroundedBy"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
