@@ -14,40 +14,31 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.org/biotop/btl2.owl</Import>
     <Declaration>
-        <NamedIndividual IRI="#T2_Code"/>
+        <Class IRI="http://purl.org/biotop/btl2.owl#Compound"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InvasiveTumorOfFourthLayer"/>
+        <Class IRI="http://purl.org/biotop/btl2.owl#InformationObject"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/biotop/btl2.owl#StructuredBiologicalEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SecondLayer"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#AnatomicalStructure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/biotop/btl2.owl#Compound"/>
+        <Class IRI="#FirstLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FourthLayer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InnerLayer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+        <Class IRI="#InvasiveTumorOfFirstLayer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#T4_Code"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#surrounds"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FirstLayer"/>
+        <Class IRI="#InvasiveTumorOfFourthLayer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InvasiveTumorOfSecondLayer"/>
@@ -56,68 +47,81 @@
         <Class IRI="#InvasiveTumorOfThirdLayer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/biotop/btl2.owl#InformationObject"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#LayeredStructureComponent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#T2"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#InvasiveTumorOfFirstLayer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#T4"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T2_Tumor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isSurroundedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T1_Tumor"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T3_Tumor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ThirdLayer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T4_Tumor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PrimaryTumor"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T1_Code"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OuterLayer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+        <Class IRI="#PrimaryTumor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#T3_Code"/>
+        <Class IRI="#RepresentationalUnitInTNMClassification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondLayer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#T1"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#T2"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#T3"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FourthLayer"/>
+        <Class IRI="#T4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThirdLayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isPartOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/biotop/btl2.owl#represents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#surrounds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T1_Code"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T1_Tumor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T2_Code"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T2_Tumor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T3_Code"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T3_Tumor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T4_Code"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T4_Tumor"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#FirstLayer"/>
+        <Class IRI="#InnerLayer"/>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#FirstLayer"/>
         <ObjectIntersectionOf>
@@ -133,6 +137,10 @@
                 <Class IRI="#SecondLayer"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FourthLayer"/>
+        <Class IRI="#OuterLayer"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#FourthLayer"/>
@@ -307,15 +315,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FirstLayer"/>
-        <Class IRI="#InnerLayer"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FirstLayer"/>
         <Class IRI="#LayeredStructureComponent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FourthLayer"/>
-        <Class IRI="#OuterLayer"/>
+        <Class IRI="#LayeredStructureComponent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InnerLayer"/>
@@ -560,5 +564,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
